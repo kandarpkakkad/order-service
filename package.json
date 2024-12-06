@@ -1,0 +1,17 @@
+{
+  "name": "order-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "start:dev": "PORT=7000 PG_USERNAME=postgres PG_PASSWORD=qwerty@123 PG_HOST=localhost PG_PORT=5432 PG_DB=test_db nodemon ./src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
